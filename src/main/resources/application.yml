@@ -5,23 +5,23 @@ spring:
   #    password:
   #    driver-class-name: org.h2.Driver
   datasource:
-    url: jdbc:mysql://localhost:3306/task_agile?useSSL=false
-    username: root
-    password: song8420
+    url: jdbc:mysql://localhost:3306/task_agile?characterEncoding=utf8&allowPublicKeyRetrieval=true&useSSL=false
+    username: scott
+    password: 1234
     driver-class-name: com.mysql.jdbc.Driver
+#
+#  jpa:
+#    hibernate:
+#      ddl-auto: none
+#    properties:
+#      hibernate:
+#        format_sql: true
+#        default_batch_fetch_size: 100
 
-  jpa:
-    hibernate:
-      ddl-auto: none
-    properties:
-      hibernate:
-        format_sql: true
-        default_batch_fetch_size: 100
-
-logging:
-  level:
-    org.hibernate.SQL: debug
-    org.hibernate.type: trace
+#logging:
+#  level:
+#    org.hibernate.SQL: debug
+#    org.hibernate.type: trace
 
 server:
   port: 8081
