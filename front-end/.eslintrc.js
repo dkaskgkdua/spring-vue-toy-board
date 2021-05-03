@@ -12,6 +12,8 @@ module.exports = {
   },
   rules: {
     'no-console': process.env.NODE_ENV === 'production' ? 'warn' : 'off',
+    // "quotes": [2, "double", { "avoidEscape": false }],
+    'quotes': ['off', 'single'],
     'no-debugger': process.env.NODE_ENV === 'production' ? 'warn' : 'off'
   },
   overrides: [
